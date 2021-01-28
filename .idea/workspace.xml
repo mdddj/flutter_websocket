@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="更新`LICENSE`">
+    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -78,7 +78,8 @@
       <updated>1611650288217</updated>
       <workItem from="1611650320962" duration="39000" />
       <workItem from="1611800454426" duration="1693000" />
-      <workItem from="1611802435640" duration="799000" />
+      <workItem from="1611802435640" duration="877000" />
+      <workItem from="1611804815302" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="更新文档">
       <created>1611801200558</created>
@@ -94,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611802729404</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="文档">
+      <created>1611803291383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611803291383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +123,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新文档" />
     <MESSAGE value="更新`LICENSE`" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新`LICENSE`" />
+    <MESSAGE value="文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="文档" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1611752788968">
@@ -134,9 +143,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611752788968" />
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611802792717">
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611803314541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611802792717" />
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611803314541" />
   </component>
 </project>

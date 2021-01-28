@@ -78,3 +78,56 @@ util.openHeart();
 ```dart
 util.send("hello world");
 ```
+
+## 工具类
+```dart
+import 'package:erp_system/config/ip.dart';
+import 'package:erp_system/utils/extend_util.dart';
+import 'package:erp_system/utils/user_util.dart';
+import 'package:flutter_socket/connect_close_model.dart';
+import 'package:flutter_socket/flutter_socket_util.dart';
+
+class WebSocketUtilsV3 {
+  WebSocketUtilsV3._();
+
+  static final WebSocketUtilsV3 _instance = WebSocketUtilsV3._();
+
+  factory WebSocketUtilsV3() => _instance;
+
+  final util = FlutterWebSocketUtil();
+
+  // 初始化socket连接
+  Future<void> init() async {
+    final user = await getCatchUser();
+    if (user != null) {
+      final _connectUrl = 'ws://$kHost:$kPort/websocket';
+      util.connect(url: _connectUrl, onOpen: onOpen, onClose: onClose, onMessage: onMessage, onError: onError);
+    }
+  }
+
+  // 连接打开
+  void onOpen(String url) {
+    log('连接成功啦;$url');
+    util.openHeart();
+  }
+
+  // 连接关闭
+  void onClose(SocketConnectCloseModel detail) {
+    log('连接被断开啦:${detail.code}');
+  }
+
+  // 收到消息
+  void onMessage(String message) {
+    log('收到消息啦:$message');
+  }
+
+  // 连接失败
+  void onError(String message) {
+    log('连接错误啦:$message');
+  }
+}
+
+```
+
+## 运行示例
+![](https://static.saintic.com/picbed/huang/2021/01/28/1611804968070.png)
