@@ -43,8 +43,7 @@ class FlutterSocket {
   /// 是否已经开启gps设置
   static Future<bool> gpsIsOpen() async {
     final result = await _channel.invokeMethod("isOpenGPS");
-    print(result);
-    return false;
+    return result.toString()=="true";
   }
   
   /// 跳转到GPS系统设置页面
