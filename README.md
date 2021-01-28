@@ -2,7 +2,14 @@
 
 flutter连接websocket插件,基于安卓`Java-WebSocket:1.4.0`插件
 
+[![](https://img.shields.io/badge/PUB-v0.0.1-yellow)](https://pub.dev/packages/flutter_socket)
+
 ## 开始使用
+
+```dart
+dependencies:
+  flutter_socket: ^0.0.1
+```
 
 
 使用工具类
