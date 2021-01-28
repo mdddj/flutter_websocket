@@ -71,6 +71,13 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                 }
 
             }
+            "closeHeart" -> {
+                if(service!=null){
+                    if(isOpen()){
+                        service!!.closeHeart()
+                    }
+                }
+            }
             "send" -> {
                 val message = call.argument<String>("message")
                 if (message != null) {
@@ -87,7 +94,7 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     // 是否已经连接
-    fun isOpen(): Boolean {
+    private fun isOpen(): Boolean {
         var res = false
         if (service != null) {
             if (service!!.client != null) {

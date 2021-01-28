@@ -69,6 +69,11 @@ class FlutterWebSocketUtil {
     await FlutterSocket.openHeart();
   }
 
+  /// 关闭心跳
+  Future<void> closeHeart()async{
+    await FlutterSocket.closeHeart();
+  }
+
   /// 发送消息
   Future<void> send([String message])async{
     if(message!=null){

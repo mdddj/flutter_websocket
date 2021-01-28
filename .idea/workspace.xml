@@ -22,9 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="文档">
+    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="更新文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_socket.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_socket_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket_util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +87,8 @@
       <workItem from="1611650320962" duration="39000" />
       <workItem from="1611800454426" duration="1693000" />
       <workItem from="1611802435640" duration="877000" />
-      <workItem from="1611804815302" duration="188000" />
+      <workItem from="1611804815302" duration="221000" />
+      <workItem from="1611810508799" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="更新文档">
       <created>1611801200558</created>
@@ -102,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611803291383</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新文档">
+      <created>1611805021490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611805021490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,31 +137,31 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更新文档" />
     <MESSAGE value="更新`LICENSE`" />
     <MESSAGE value="文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="文档" />
+    <MESSAGE value="更新文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新文档" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1611752788968">
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1611810412617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611752788968" />
-    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1611752788968">
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
+    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1611810412617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611752788968" />
-    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1611752788967">
+    <state width="1877" height="237" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
+    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1611810412616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611752788967" />
-    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1611752788968">
+    <state width="1877" height="237" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412616" />
+    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1611810412617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611752788968" />
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611803314541">
+    <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611805027721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611803314541" />
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611805027721" />
   </component>
 </project>

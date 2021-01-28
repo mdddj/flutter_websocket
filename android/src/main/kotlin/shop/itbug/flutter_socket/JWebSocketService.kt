@@ -92,6 +92,7 @@ class JWebSocketService : Service() {
 
             override fun onError(ex: Exception?) {
                 if (ex != null) {
+                    mHandler.removeCallbacks(heartBeatRunnable)
                     error(ex.toString())
                 } else {
                     error("连接失败:未知原因")
@@ -125,6 +126,13 @@ class JWebSocketService : Service() {
         mHandler.postDelayed(heartBeatRunnable, sendTime) // 开启心跳
     }
 
+    /**
+     * 关闭心跳
+     */
+    fun closeHeart(){
+        mHandler.removeCallbacks(heartBeatRunnable)
+    }
+
     private val sendTime = (30 * 1000).toLong()
     private val mHandler: Handler = Handler()
     private val heartBeatRunnable: Runnable = object : Runnable {
@@ -134,7 +142,6 @@ class JWebSocketService : Service() {
                     reconnectWs()
                 }
             }
-            Log.d(FlutterSocketPlugin::class.java.simpleName, "正在检测连接是否断开,如果断开将重新连接")
             mHandler.postDelayed(this, sendTime)
         }
     }
@@ -154,6 +161,7 @@ class JWebSocketService : Service() {
      * 开启重连
      */
     private fun reconnectWs() {
+
         mHandler.removeCallbacks(heartBeatRunnable)
         object : Thread() {
             override fun run() {
@@ -177,8 +185,9 @@ class JWebSocketService : Service() {
             e.printStackTrace()
         } finally {
             client = null
+            mHandler.removeCallbacks(heartBeatRunnable)
         }
-        mHandler.removeCallbacks(heartBeatRunnable)
+
     }
 
 }

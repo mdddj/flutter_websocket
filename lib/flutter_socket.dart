@@ -22,6 +22,11 @@ class FlutterSocket {
     await _channel.invokeMethod("openHeart");
   }
 
+  /// 关闭心跳
+  static Future<void> closeHeart() async {
+    await _channel.invokeMethod("closeHeart");
+  }
+
   /// 发送消息
   static Future<void> send([String message]) async {
     if (message != null) {
