@@ -22,11 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="新增功能">
+    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="新增功能set http_proxy=http://127.0.0.1:2333&#10;    set https_proxy=https://127.0.0.1:2333&#10;set http_proxy=http://127.0.0.1:2333&#10;set https_proxy=https://127.0.0.1:2333">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_socket.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +92,8 @@
       <workItem from="1611804815302" duration="221000" />
       <workItem from="1611810508799" duration="194000" />
       <workItem from="1611813424066" duration="1905000" />
-      <workItem from="1611815854029" duration="58000" />
+      <workItem from="1611815854029" duration="135000" />
+      <workItem from="1611828078463" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="更新文档">
       <created>1611801200558</created>
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611815679325</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="新增功能">
+      <created>1611815921883</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611815921883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,9 +187,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611815684997">
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611815930991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611815684997" />
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611815930991" />
   </component>
 </project>

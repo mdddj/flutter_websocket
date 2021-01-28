@@ -74,6 +74,14 @@ class JWebSocketService : Service() {
                          close: (code: Int, reason: String?, remote: Boolean) -> Unit,
                          error: (message: String) -> Unit,
                          doMessage: (message: String) -> Unit) {
+        Log.d("FlutterSocketPlugin","客户端是否为空:${client==null}")
+        if(client!=null){
+            if(client!!.isOpen){
+                Log.d(FlutterSocketPlugin::class.java.simpleName, "已经连接,如需重复连接请先断开")
+                return
+            }
+        }
+        Log.d(FlutterSocketPlugin::class.java.simpleName, "连接中...")
         val uri = URI.create(url)
         client = object : JWebSocketClient(uri) {
             override fun onMessage(message: String?) {
@@ -92,7 +100,6 @@ class JWebSocketService : Service() {
 
             override fun onError(ex: Exception?) {
                 if (ex != null) {
-                    mHandler.removeCallbacks(heartBeatRunnable)
                     error(ex.toString())
                 } else {
                     error("连接失败:未知原因")
@@ -123,18 +130,25 @@ class JWebSocketService : Service() {
      * 开启心跳
      */
     fun openHeart() {
+        Log.d("JWebSocketService", "开启心跳.")
         mHandler.postDelayed(heartBeatRunnable, sendTime) // 开启心跳
     }
 
     /**
      * 关闭心跳
      */
-    fun closeHeart(){
+    fun closeHeart() {
+        Log.d("JWebSocketService", "关闭心跳.")
         mHandler.removeCallbacks(heartBeatRunnable)
     }
 
+    // 心跳间隔
     private val sendTime = (30 * 1000).toLong()
+
+    // 线程
     private val mHandler: Handler = Handler()
+
+    // 执行任务
     private val heartBeatRunnable: Runnable = object : Runnable {
         override fun run() {
             if (client != null) {
@@ -176,16 +190,16 @@ class JWebSocketService : Service() {
     }
 
     /**
-     * 断开连接
+     * 主动断开连接
      */
     fun closeConnect() {
+        closeHeart()
         try {
             client?.close()
         } catch (e: Exception) {
             e.printStackTrace()
         } finally {
             client = null
-            mHandler.removeCallbacks(heartBeatRunnable)
         }
 
     }

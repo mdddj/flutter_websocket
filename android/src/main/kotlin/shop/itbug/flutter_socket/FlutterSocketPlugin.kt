@@ -75,6 +75,7 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             "closeHeart" -> {
                 if (service != null) {
                     if (isOpen()) {
+                        Log.d("11111111111","断开心跳");
                         service!!.closeHeart()
                     }
                 }
@@ -138,7 +139,6 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     // 连接
     private fun connect(socketUrl: String) {
-        Log.d(FlutterSocketPlugin::class.java.simpleName, "连接中...")
         service?.initSocketClient(socketUrl, { url -> connectSuccess(url) }, { code, reason, remote -> connectClose(code, reason, remote) }, { message: String -> connectError(message) }) { message: String ->
             connectMessage(message)
         }
