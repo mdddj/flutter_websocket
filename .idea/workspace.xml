@@ -22,16 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="更新文档">
+    <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="新增关闭心跳的方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_socket.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_socket_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +61,12 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -88,7 +92,8 @@
       <workItem from="1611800454426" duration="1693000" />
       <workItem from="1611802435640" duration="877000" />
       <workItem from="1611804815302" duration="221000" />
-      <workItem from="1611810508799" duration="69000" />
+      <workItem from="1611810508799" duration="194000" />
+      <workItem from="1611813424066" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="更新文档">
       <created>1611801200558</created>
@@ -118,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611805021490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增关闭心跳的方法">
+      <created>1611810612014</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611810612014</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +152,8 @@
     <MESSAGE value="更新`LICENSE`" />
     <MESSAGE value="文档" />
     <MESSAGE value="更新文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新文档" />
+    <MESSAGE value="新增关闭心跳的方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增关闭心跳的方法" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1611810412617">
@@ -159,9 +172,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611805027721">
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611810620185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611805027721" />
+    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611810620185" />
   </component>
 </project>

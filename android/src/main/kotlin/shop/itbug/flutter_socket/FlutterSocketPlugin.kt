@@ -24,6 +24,7 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     private lateinit var channel: MethodChannel
 
     private val gson: Gson = Gson()
+    private val util: Util = Util()
 
     //-------------------------------------
     private lateinit var client: JWebSocketClient
@@ -72,8 +73,8 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
             }
             "closeHeart" -> {
-                if(service!=null){
-                    if(isOpen()){
+                if (service != null) {
+                    if (isOpen()) {
                         service!!.closeHeart()
                     }
                 }
@@ -86,6 +87,15 @@ class FlutterSocketPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             }
             "isOpen" -> {
                 result.success(isOpen())
+            }
+            "isOpenGPS" -> {
+                val isOpenGps = util.isOpenGPSSetting(context)
+                result.success(isOpenGps)
+            }
+            "openGPSSystemSetting" -> {
+                // 打开gps设置
+                util.openGPS(context, activity)
+                result.success(true)
             }
             else -> {
                 result.notImplemented()

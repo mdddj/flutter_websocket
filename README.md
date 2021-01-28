@@ -8,7 +8,7 @@ flutter连接websocket插件,基于安卓`Java-WebSocket:1.4.0`插件
 
 ```dart
 dependencies:
-  flutter_socket: ^0.0.2
+  flutter_socket: ^0.0.4
 ```
 
 

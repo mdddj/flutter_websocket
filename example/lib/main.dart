@@ -61,6 +61,13 @@ class _MyAppState extends State<MyApp> {
               }),
               renderBtn("检测是否已经连接", (){
                 FlutterSocket.isOpen();
+              }),
+              renderBtn("是否打开了GPS设置", ()async{
+              final isOpen = await  FlutterSocket.gpsIsOpen();
+              print('gps是否打开:$isOpen');
+              }),
+              renderBtn("打开gps设置页面", (){
+                FlutterSocket.openGPSSystemPage();
               })
             ],
           ),
