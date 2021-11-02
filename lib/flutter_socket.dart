@@ -1,14 +1,13 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
 class FlutterSocket {
-  static const MethodChannel _channel = const MethodChannel('flutter_socket');
+  static const MethodChannel _channel = MethodChannel('flutter_socket');
 
   /// 连接
-  static Future<void> connect({@required String url}) async {
-    assert(url != null && url.isNotEmpty, 'socket 连接地址不能为空');
+  static Future<void> connect({required String url}) async {
+    assert(url.isNotEmpty, 'socket 连接地址不能为空');
     await _channel.invokeMethod('connect', {'url': url});
   }
 
@@ -28,7 +27,7 @@ class FlutterSocket {
   }
 
   /// 发送消息
-  static Future<void> send([String message]) async {
+  static Future<void> send([String? message]) async {
     if (message != null) {
       await _channel.invokeMethod("send", {"message": message});
     }

@@ -11,8 +11,8 @@ class SocketResultModel {
     this.messageType,
   });
 
-  String data;
-  String messageType;
+  String? data;
+  String? messageType;
 
   factory SocketResultModel.fromJson(Map<String, dynamic> json) => SocketResultModel(
     data: json["data"],

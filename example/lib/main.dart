@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _url = 'ws://192.168.199.63:8088/websocket/3/phone';
+  final String _url = 'ws://192.168.199.63:8088/websocket/3/phone';
 
   // String _url = 'ws://192.168.199.63:8088/phone';
 
@@ -53,22 +53,14 @@ class _MyAppState extends State<MyApp> {
                       print('连接失败:$message');
                     });
               }),
-              renderBtn("断开连接", (){
-                util.close();
-              }),
-              renderBtn("开启心跳", (){
-                util.openHeart();
-              }),
-              renderBtn("检测是否已经连接", (){
-                FlutterSocket.isOpen();
-              }),
+              renderBtn("断开连接", util.close),
+              renderBtn("开启心跳", util.openHeart),
+              renderBtn("检测是否已经连接", FlutterSocket.isOpen),
               renderBtn("是否打开了GPS设置", ()async{
               final isOpen = await  FlutterSocket.gpsIsOpen();
               print('gps是否打开:$isOpen');
               }),
-              renderBtn("打开gps设置页面", (){
-                FlutterSocket.openGPSSystemPage();
-              })
+              renderBtn("打开gps设置页面", FlutterSocket.openGPSSystemPage)
             ],
           ),
         ),

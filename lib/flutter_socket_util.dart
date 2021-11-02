@@ -1,12 +1,11 @@
 // 工具类
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_socket/flutter_socket.dart';
-import 'package:flutter_socket/result_model.dart';
 
 import 'connect_close_model.dart';
+import 'flutter_socket.dart';
+import 'result_model.dart';
 
 class FlutterWebSocketUtil {
   FlutterWebSocketUtil._();
@@ -19,18 +18,18 @@ class FlutterWebSocketUtil {
 
   //-----------------------------------------------------
 
-  EventChannel _eventChannel = EventChannel('flutter_socket_plugin');
-  StreamSubscription _stream;
+  final EventChannel _eventChannel = EventChannel('flutter_socket_plugin');
+  late StreamSubscription _stream;
 
   //-----------------------------------------------------
 
   // 连接
   Future<void> connect(
-      {@required String url,
-      ConnectError onError,
-      ConnectClose onClose,
-      ConnectOpen onOpen,
-      MessageHandle onMessage}) async {
+      {required String url,
+      ConnectError? onError,
+      ConnectClose? onClose,
+      ConnectOpen? onOpen,
+      MessageHandle? onMessage}) async {
     _stream = _eventChannel.receiveBroadcastStream().listen((event) {
       final json = event as String;
       if (json.isNotEmpty) {
@@ -40,7 +39,7 @@ class FlutterWebSocketUtil {
             if (onError != null) onError(result.data);
             break;
           case 'connectClose':
-            final data = result.data;
+            final data = result.data!;
             final error = socketConnectCloseModelFromJson(data);
             if (onClose != null) onClose(error);
             break;
@@ -75,7 +74,7 @@ class FlutterWebSocketUtil {
   }
 
   /// 发送消息
-  Future<void> send([String message])async{
+  Future<void> send([String? message])async{
     if(message!=null){
       await FlutterSocket.send(message);
     }
@@ -84,14 +83,14 @@ class FlutterWebSocketUtil {
 }
 
 /// 连接失败回调
-typedef ConnectError = void Function(String message);
+typedef ConnectError = void Function(String? message);
 
 /// 连接被关闭回调
 /// 服务器主动断开连接,或者意外断开回调
 typedef ConnectClose = void Function(SocketConnectCloseModel closeDetail);
 
 /// 连接成功回调,只会调用一次
-typedef ConnectOpen = void Function(String successUrl);
+typedef ConnectOpen = void Function(String? successUrl);
 
 /// 收到消息回调
-typedef MessageHandle = void Function(String message);
+typedef MessageHandle = void Function(String? message);

@@ -17,13 +17,13 @@ class SocketConnectCloseModel {
   });
 
   /// 错误码
-  int code;
+  int? code;
 
   /// 错误详情
-  String message;
+  String? message;
 
   /// 是否远程连接地址
-  bool remote;
+  bool? remote;
 
   factory SocketConnectCloseModel.fromJson(Map<String, dynamic> json) => SocketConnectCloseModel(
     code: json["code"],

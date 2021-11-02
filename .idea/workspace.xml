@@ -23,11 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b42789-7b62-4918-a13a-b3e2d3c9e430" name="Default Changelist" comment="新增功能set http_proxy=http://127.0.0.1:2333&#10;    set https_proxy=https://127.0.0.1:2333&#10;set http_proxy=http://127.0.0.1:2333&#10;set https_proxy=https://127.0.0.1:2333">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/FlutterSocketPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/shop/itbug/flutter_socket/JWebSocketService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/connect_close_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/connect_close_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_socket.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_socket_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_socket_util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/result_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/result_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +45,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\eee\.android\avd\Pixel_5_API_31.avd]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -46,6 +57,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nbEFr2OSvI72ZCf5czjwCBHm05" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -56,7 +70,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../AndroidSDK/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -66,8 +79,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eee\Documents\GitHub\flutter_websocket" />
+    </key>
   </component>
   <component name="RunManager" selected="Flutter.example/lib/main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -75,7 +93,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -169,27 +187,5 @@
     <MESSAGE value="新增关闭心跳的方法" />
     <MESSAGE value="新增功能" />
     <option name="LAST_COMMIT_MESSAGE" value="新增功能" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1611810412617">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
-    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1611810412617">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
-    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1611810412616">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412616" />
-    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1611810412617">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611810412617" />
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2" timestamp="1611815930991">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="551" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611815930991" />
   </component>
 </project>
